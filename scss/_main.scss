@@ -1,0 +1,18 @@
+$text-primary: #bf365a;
+$ancho: 1000px;
+$altura: 1000px;
+
+.content {
+  max-width: $ancho/2;
+}
+#hero {
+  height: ($altura)-100;
+}
+.section-2 {
+  margin-top: $altura/5;
+  margin-bottom: 200px;
+}
+
+.user {
+  color: var(--primary);
+}

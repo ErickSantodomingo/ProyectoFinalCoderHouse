@@ -1,0 +1,17 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navfooter ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+.navfooter ul li {
+  margin: 10px;
+}
+.nav-logos :hover {
+  color: var(--primary);
+}
+$text-primary: red;
