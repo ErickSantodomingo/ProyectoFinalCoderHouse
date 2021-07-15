@@ -1,0 +1,20 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Esta es mi descripción para mi package.json de mis archivos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ErickSASS": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErickSantodomingo/website.git"
+  },
+  "author": "Erick David Santodomingo Polo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErickSantodomingo/website/issues"
+  },
+  "homepage": "https://github.com/ErickSantodomingo/website#readme"
+}
