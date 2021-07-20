@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navfooter ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+.navfooter ul li {
+  margin: 10px;
+}
+.nav-logos {
+  transition: 0.5s;
+}
+.nav-logos:hover {
+  transform: translateY(-15px);
+}
