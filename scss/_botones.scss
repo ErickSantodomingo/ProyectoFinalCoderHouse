@@ -1,10 +1,11 @@
 .boton {
-  background-color: var(--primary);
-  border: var(--primary);
+  background-color: var(--primary) !important;
+  border: var(--primary) !important;
+  font-weight: 500;
+  transition: 0.2s ease !important;
 }
 .boton:hover {
-  background-color: var(--primary);
-  border: var(--primary);
+  background-color: var(--primary) !important;
+  border: var(--primary) !important;
+  letter-spacing: 3px;
 }
-
-$btn-primary: var(--primary);
