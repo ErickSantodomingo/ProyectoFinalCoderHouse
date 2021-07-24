@@ -1,0 +1,40 @@
+/*ESTILOS PARA TODO EL FOOTER*/
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: -100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*ESTILOS PARA LAS LISTAS*/
+.navfooter ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+.navfooter ul li {
+  margin: 10px;
+}
+/*ESTILOS Y ANIMCION PARA LOS LOGOS DEL FOOTER*/
+.nav-logos {
+  color: #111;
+  padding: 10px;
+  font-size: 35px;
+  transition: 0.5s;
+}
+
+.nav-logos:hover {
+  color: #bf365a;
+  transform: translateY(-15px);
+}
+
+@media only screen and (max-width: 900px) {
+  footer {
+    .copyright {
+      max-width: 230px;
+      text-align: center;
+    }
+  }
+}

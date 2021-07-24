@@ -1,0 +1,36 @@
+/*ANIMACIONES PARA TODO EL SITIO*/
+html {
+  animation-duration: 4s;
+  animation-name: aparecer;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*ANIMCION DE ILUSTRACION EN EL INDEX*/
+#hoja1,
+#hoja3 {
+  animation: viento 2.5s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#hoja2,
+#hoja4 {
+  animation: viento 3s ease-in-out infinite alternate-reverse;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes viento {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(30deg);
+  }
+}
