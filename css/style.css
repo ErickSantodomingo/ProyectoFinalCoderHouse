@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*RESET CSS*/
 * {
   padding: 0;
   margin: 0;
@@ -6,15 +7,18 @@
   font-family: poppins;
 }
 
+/*VARIABLES DE COLORES PARA TODO EL SITIO*/
 :root {
   --primary: #bf365a;
   --secundary: white;
 }
 
+/*ESTILO DEL LOGO*/
 #logo {
   margin-right: 5px;
 }
 
+/*ESTILOS Y ANIMACIONES DEL NAV*/
 .navbar {
   min-height: 90px;
 }
@@ -28,10 +32,16 @@
   background-color: var(--primary);
 }
 
+.link {
+  padding: 10px !important;
+}
+
+/*CLASE PARA PONERLE COLORES A LOS ELEMENTOS*/
 .color-primario {
   color: var(--primary);
 }
 
+/*ESTILOS PARA UBICAR CONTENIDO*/
 .content {
   max-width: 500px;
 }
@@ -40,6 +50,7 @@
   height: 900px;
 }
 
+/*CLASE PARA DARLE COLOR A ELEMENTOS DE LA SECCION CLIENTES*/
 .user {
   color: var(--primary);
 }
@@ -50,11 +61,21 @@
   align-items: center;
 }
 
+/*ANIMACIONES PARA TODO EL SITIO*/
 html {
   animation-duration: 4s;
   animation-name: aparecer;
 }
 
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*ANIMCION DE ILUSTRACION EN EL INDEX*/
 #hoja1,
 #hoja3 {
   animation: viento 2.5s ease-in-out infinite alternate;
@@ -77,14 +98,7 @@ html {
     transform: rotateY(30deg);
   }
 }
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+/*ANIMCION Y ESTILOS DE LOS BOTONES*/
 .boton {
   background-color: var(--primary) !important;
   border: var(--primary) !important;
@@ -98,6 +112,7 @@ html {
   letter-spacing: 3px;
 }
 
+/*ESTILOS PARA CAROUSEL*/
 .img-galeria-1 {
   width: 100%;
   height: 100%;
@@ -113,6 +128,7 @@ html {
   height: 100%;
 }
 
+/*ANIMACIONES Y ESTILO PARA PARTE DE ALBUM*/
 .galeria {
   display: block;
   margin: auto;
@@ -130,6 +146,25 @@ html {
   margin: 0.5rem;
 }
 
+@media only screen and (max-width: 900px) {
+  .galeria {
+    display: block;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+  }
+  .galeria .galeria__img {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 2rem;
+    margin: 0.3rem;
+  }
+}
+/*ESTILOS PARA TODO EL FOOTER*/
 footer {
   width: 100%;
   position: absolute;
@@ -140,6 +175,7 @@ footer {
   justify-content: center;
 }
 
+/*ESTILOS PARA LAS LISTAS*/
 .navfooter ul {
   display: flex;
   text-decoration: none;
@@ -150,6 +186,7 @@ footer {
   margin: 10px;
 }
 
+/*ESTILOS Y ANIMCION PARA LOS LOGOS DEL FOOTER*/
 .nav-logos {
   color: #111;
   padding: 10px;
@@ -162,6 +199,12 @@ footer {
   transform: translateY(-15px);
 }
 
+@media only screen and (max-width: 900px) {
+  footer .copyright {
+    max-width: 230px;
+    text-align: center;
+  }
+}
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
