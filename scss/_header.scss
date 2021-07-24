@@ -1,16 +1,20 @@
+/*RESET CSS*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: poppins;
 }
+/*VARIABLES DE COLORES PARA TODO EL SITIO*/
 :root {
   --primary: #bf365a;
   --secundary: white;
 }
+/*ESTILO DEL LOGO*/
 #logo {
   margin-right: 5px;
 }
+/*ESTILOS Y ANIMACIONES DEL NAV*/
 .navbar {
   min-height: 90px;
 }
@@ -20,4 +24,7 @@
 }
 .ubicacion {
   background-color: var(--primary);
+}
+.link {
+  padding: 10px !important;
 }
