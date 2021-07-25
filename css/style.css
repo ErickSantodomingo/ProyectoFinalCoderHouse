@@ -22,18 +22,16 @@
 .navbar {
   min-height: 90px;
 }
+.navbar .ubicacion {
+  background-color: var(--primary);
+}
+.navbar .link {
+  padding: 10px !important;
+}
 
-.nav-bar li a:hover {
+.navbar li a:hover {
   background-color: var(--primary);
   color: var(--secundary) !important;
-}
-
-.ubicacion {
-  background-color: var(--primary);
-}
-
-.link {
-  padding: 10px !important;
 }
 
 /*CLASE PARA PONERLE COLORES A LOS ELEMENTOS*/
@@ -56,11 +54,20 @@
 }
 
 .section-error {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 80%;
+  margin: auto;
 }
 
+/*ESTILO PARA LOS TEXTOS*/
+.texto {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 900px) {
+  .name-brand {
+    display: none;
+  }
+}
 /*ANIMACIONES PARA TODO EL SITIO*/
 html {
   animation-duration: 4s;
@@ -76,15 +83,15 @@ html {
   }
 }
 /*ANIMCION DE ILUSTRACION EN EL INDEX*/
-#hoja1,
-#hoja3 {
+#hoja-1,
+#hoja-3 {
   animation: viento 2.5s ease-in-out infinite alternate;
   transform-origin: center;
   transform-box: fill-box;
 }
 
-#hoja2,
-#hoja4 {
+#hoja-2,
+#hoja-4 {
   animation: viento 3s ease-in-out infinite alternate-reverse;
   transform-origin: center;
   transform-box: fill-box;
@@ -175,14 +182,13 @@ footer {
   justify-content: center;
 }
 
-/*ESTILOS PARA LAS LISTAS*/
-.navfooter ul {
+/*ESTILOS PARA LAS LISTAS DEL FOOTER*/
+.nav-footer ul {
   display: flex;
   text-decoration: none;
   list-style: none;
 }
-
-.navfooter ul li {
+.nav-footer ul li {
   margin: 10px;
 }
 
