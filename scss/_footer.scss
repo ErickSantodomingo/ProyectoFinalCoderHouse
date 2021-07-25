@@ -8,15 +8,16 @@ footer {
   align-items: center;
   justify-content: center;
 }
-/*ESTILOS PARA LAS LISTAS*/
-.navfooter ul {
+/*ESTILOS PARA LAS LISTAS DEL FOOTER*/
+.nav-footer ul {
   display: flex;
   text-decoration: none;
   list-style: none;
+  li {
+    margin: 10px;
+  }
 }
-.navfooter ul li {
-  margin: 10px;
-}
+
 /*ESTILOS Y ANIMCION PARA LOS LOGOS DEL FOOTER*/
 .nav-logos {
   color: #111;

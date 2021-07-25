@@ -17,14 +17,14 @@
 /*ESTILOS Y ANIMACIONES DEL NAV*/
 .navbar {
   min-height: 90px;
+  .ubicacion {
+    background-color: var(--primary);
+  }
+  .link {
+    padding: 10px !important;
+  }
 }
-.nav-bar li a:hover {
+.navbar li a:hover {
   background-color: var(--primary);
   color: var(--secundary) !important;
-}
-.ubicacion {
-  background-color: var(--primary);
-}
-.link {
-  padding: 10px !important;
 }

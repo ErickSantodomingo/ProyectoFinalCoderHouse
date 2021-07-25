@@ -16,7 +16,16 @@ $altura: 1000px;
   color: var(--primary);
 }
 .section-error {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 80%;
+  margin: auto;
+}
+/*ESTILO PARA LOS TEXTOS*/
+.texto {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 900px) {
+  .name-brand {
+    display: none;
+  }
 }
