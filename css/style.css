@@ -39,6 +39,11 @@
   color: var(--primary);
 }
 
+*::selection {
+  background-color: #bf365a;
+  color: var(--secundary);
+}
+
 /*ESTILOS PARA UBICAR CONTENIDO*/
 .content {
   max-width: 500px;
