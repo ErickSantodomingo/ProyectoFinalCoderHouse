@@ -4,6 +4,10 @@ $altura: 1000px;
 .color-primario {
   color: var(--primary);
 }
+*::selection {
+  background-color: #bf365a;
+  color: var(--secundary);
+}
 /*ESTILOS PARA UBICAR CONTENIDO*/
 .content {
   max-width: $ancho/2;
