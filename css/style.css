@@ -1,212 +1,4 @@
 @charset "UTF-8";
-/*RESET CSS*/
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: poppins;
-}
-
-/*VARIABLES DE COLORES PARA TODO EL SITIO*/
-:root {
-  --primary: #bf365a;
-  --secundary: white;
-}
-
-/*ESTILO DEL LOGO*/
-#logo {
-  margin-right: 5px;
-}
-
-/*ESTILOS Y ANIMACIONES DEL NAV*/
-.navbar {
-  min-height: 90px;
-}
-.navbar .ubicacion {
-  background-color: var(--primary);
-}
-.navbar .link {
-  padding: 10px !important;
-}
-
-.navbar li a:hover {
-  background-color: var(--primary);
-  color: var(--secundary) !important;
-}
-
-/*CLASE PARA PONERLE COLORES A LOS ELEMENTOS*/
-.color-primario {
-  color: var(--primary);
-}
-
-*::selection {
-  background-color: #bf365a;
-  color: var(--secundary);
-}
-
-/*ESTILOS PARA UBICAR CONTENIDO*/
-.content {
-  max-width: 500px;
-}
-
-#hero {
-  height: 900px;
-}
-
-/*CLASE PARA DARLE COLOR A ELEMENTOS DE LA SECCION CLIENTES*/
-.user {
-  color: var(--primary);
-}
-
-.section-error {
-  height: 80%;
-  margin: auto;
-}
-
-/*ESTILO PARA LOS TEXTOS*/
-.texto {
-  text-align: justify;
-}
-
-/*ELIMINACION DE NOMBRE DE LA EMPRESA */
-@media only screen and (max-width: 900px) {
-  .name-brand {
-    display: none;
-  }
-}
-/*ANIMACIONES PARA TODO EL SITIO*/
-html {
-  animation-duration: 4s;
-  animation-name: aparecer;
-}
-
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-/*ANIMCION DE ILUSTRACION EN EL INDEX*/
-#hoja-1,
-#hoja-3 {
-  animation: viento 2.5s ease-in-out infinite alternate;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-#hoja-2,
-#hoja-4 {
-  animation: viento 3s ease-in-out infinite alternate-reverse;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-@keyframes viento {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(30deg);
-  }
-}
-/*ANIMCION Y ESTILOS DE LOS BOTONES*/
-.boton {
-  background-color: var(--primary) !important;
-  border: var(--primary) !important;
-  font-weight: 500;
-  transition: 0.2s ease !important;
-}
-
-.boton:hover {
-  background-color: var(--primary) !important;
-  border: var(--primary) !important;
-  letter-spacing: 3px;
-}
-
-/*ANIMACIONES Y ESTILO PARA PARTE DE ALBUM*/
-.galeria {
-  display: block;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 1rem;
-}
-.galeria .galeria__img {
-  width: 100%;
-  max-width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin: 0.5rem;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.galeria__img:hover {
-  opacity: 0.6;
-}
-
-@media only screen and (max-width: 900px) {
-  .galeria {
-    display: block;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 1rem;
-  }
-  .galeria .galeria__img {
-    width: 100%;
-    max-width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin: 0.3rem;
-  }
-}
-/*ESTILOS PARA TODO EL FOOTER*/
-footer {
-  width: 100%;
-  position: absolute;
-  bottom: -100;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/*ESTILOS PARA LAS LISTAS DEL FOOTER*/
-.nav-footer ul {
-  display: flex;
-  text-decoration: none;
-  list-style: none;
-}
-.nav-footer ul li {
-  margin: 10px;
-}
-
-/*ESTILOS Y ANIMCION PARA LOS LOGOS DEL FOOTER*/
-.nav-logos {
-  color: #111;
-  padding: 10px;
-  font-size: 35px;
-  transition: 0.5s;
-}
-
-.nav-logos:hover {
-  color: #bf365a;
-  transform: translateY(-15px);
-}
-
-@media only screen and (max-width: 900px) {
-  footer .copyright {
-    max-width: 230px;
-    text-align: center;
-  }
-}
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -10952,6 +10744,219 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important;
+  }
+}
+/*RESET CSS*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+/*VARIABLES DE COLORES PARA TODO EL SITIO*/
+:root {
+  --primary: #bf365a;
+  --secundary: #fff;
+}
+
+/*ESTILO DEL LOGO*/
+#logo {
+  margin-right: 5px;
+}
+
+/*ESTILOS Y ANIMACIONES DEL NAV*/
+.navbar {
+  min-height: 90px;
+}
+.navbar .ubicacion {
+  background-color: var(--primary);
+}
+.navbar .link {
+  padding: 10px !important;
+}
+
+.navbar li a:hover {
+  background-color: var(--primary);
+  color: var(--secundary) !important;
+}
+
+/*CLASE PARA PONERLE COLORES A LOS ELEMENTOS*/
+.color-primario {
+  color: var(--primary);
+}
+
+*::selection {
+  background-color: #bf365a;
+  color: var(--secundary);
+}
+
+/*ESTILOS PARA UBICAR CONTENIDO*/
+.content {
+  max-width: 500px;
+}
+
+#hero {
+  height: 900px;
+}
+
+/*CLASE PARA DARLE COLOR A ELEMENTOS DE LA SECCION CLIENTES*/
+.user {
+  color: var(--primary);
+}
+
+.section-error {
+  height: 80%;
+  margin: auto;
+}
+
+/*ESTILO PARA LOS TEXTOS*/
+.texto {
+  text-align: justify;
+}
+
+/*ELIMINACION DE NOMBRE DE LA EMPRESA */
+@media only screen and (max-width: 900px) {
+  .name-brand {
+    display: none;
+  }
+}
+/*ANIMACIONES PARA TODO EL SITIO*/
+html {
+  animation-duration: 4s;
+  animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*ANIMCION DE ILUSTRACION EN EL INDEX*/
+#hoja-1,
+#hoja-3 {
+  animation: viento 2.5s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#hoja-2,
+#hoja-4 {
+  animation: viento 3s ease-in-out infinite alternate-reverse;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes viento {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(30deg);
+  }
+}
+/*ANIMCION Y ESTILOS DE LOS BOTONES*/
+.boton {
+  background-color: var(--primary) !important;
+  border: var(--primary) !important;
+  font-weight: 500;
+  transition: 0.2s ease !important;
+}
+
+.boton:hover {
+  background-color: var(--primary) !important;
+  border: var(--primary) !important;
+  letter-spacing: 3px;
+}
+
+/*ANIMACIONES Y ESTILO PARA PARTE DE ALBUM*/
+.galeria {
+  display: block;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+.galeria .galeria__img {
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.galeria__img:hover {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 900px) {
+  .galeria {
+    display: block;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .galeria .galeria__img {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0.3rem;
+  }
+}
+/*ESTILOS CONTROL CARROUSEL*/
+.control-carrousel {
+  font-size: 32px;
+}
+
+/*ESTILOS PARA TODO EL FOOTER*/
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: -100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*ESTILOS PARA LAS LISTAS DEL FOOTER*/
+.nav-footer ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+.nav-footer ul li {
+  margin: 10px;
+}
+
+/*ESTILOS Y ANIMCION PARA LOS LOGOS DEL FOOTER*/
+.nav-logos {
+  color: #111;
+  padding: 10px;
+  font-size: 35px;
+  transition: 0.5s;
+}
+
+.nav-logos:hover {
+  color: #bf365a;
+  transform: translateY(-15px);
+}
+
+@media only screen and (max-width: 900px) {
+  footer .copyright {
+    max-width: 230px;
+    text-align: center;
   }
 }
 
