@@ -15,13 +15,13 @@ html {
 /*ANIMCION DE ILUSTRACION EN EL INDEX*/
 #hoja-1,
 #hoja-3 {
-  animation: viento 2.5s ease-in-out infinite alternate;
+  animation: viento 1.3s ease infinite alternate;
   transform-origin: center;
   transform-box: fill-box;
 }
 #hoja-2,
 #hoja-4 {
-  animation: viento 3s ease-in-out infinite alternate-reverse;
+  animation: viento 1.7s ease infinite alternate-reverse;
   transform-origin: center;
   transform-box: fill-box;
 }
