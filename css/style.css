@@ -10838,14 +10838,14 @@ html {
 /*ANIMCION DE ILUSTRACION EN EL INDEX*/
 #hoja-1,
 #hoja-3 {
-  animation: viento 2.5s ease-in-out infinite alternate;
+  animation: viento 1.3s ease infinite alternate;
   transform-origin: center;
   transform-box: fill-box;
 }
 
 #hoja-2,
 #hoja-4 {
-  animation: viento 3s ease-in-out infinite alternate-reverse;
+  animation: viento 1.7s ease infinite alternate-reverse;
   transform-origin: center;
   transform-box: fill-box;
 }
@@ -10860,15 +10860,21 @@ html {
 }
 /*ANIMCION Y ESTILOS DE LOS BOTONES*/
 .boton {
-  background-color: var(--primary) !important;
-  border: var(--primary) !important;
-  font-weight: 500;
-  transition: 0.2s ease !important;
+  background-color: var(--primary);
+  border: var(--primary);
+  text-decoration: none;
+  color: var(--secundary);
+  font-weight: 450;
+  transition: 0.2s ease;
+  cursor: pointer;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
 }
 
 .boton:hover {
-  background-color: var(--primary) !important;
-  border: var(--primary) !important;
+  color: var(--secundary);
+  background-color: var(--primary);
+  border: var(--primary);
   letter-spacing: 3px;
 }
 
@@ -10946,6 +10952,7 @@ footer {
   padding: 10px;
   font-size: 35px;
   transition: 0.5s;
+  text-align: center;
 }
 
 .nav-logos:hover {
