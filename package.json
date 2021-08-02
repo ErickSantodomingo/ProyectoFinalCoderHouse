@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "1.0.0",
-  "description": "Esta es mi descripción para mi package.json de mis archivos",
+  "description": "Esta es mi descripción para mi package.json de mis archivos. En este archivo voy a guardar todos los comandes que utilice",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ErickSantodomingo/website/issues"
   },
-  "homepage": "https://github.com/ErickSantodomingo/website#readme"
+  "homepage": "https://github.com/ErickSantodomingo/website#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
 }
