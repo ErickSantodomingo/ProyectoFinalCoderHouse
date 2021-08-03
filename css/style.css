@@ -10800,6 +10800,13 @@ textarea.form-control-lg {
   height: 900px;
 }
 
+@media only screen and (max-width: 900px) {
+  .clientes {
+    border: solid #b8b8b8 0.025rem;
+    padding: 2rem;
+    border-radius: 0.3rem;
+  }
+}
 /*CLASE PARA DARLE COLOR A ELEMENTOS DE LA SECCION CLIENTES*/
 .user {
   color: var(--primary);
